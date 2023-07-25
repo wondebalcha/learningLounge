@@ -1,0 +1,413 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.header{
+    display: none;
+}
+.heading{
+    margin-left: 45px;
+    font-size: 12px;
+}
+h1{
+    padding: 8px;
+    background: red;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: 'Roboto Slab',serif;
+
+}
+p{
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+input{
+    height: 32px;
+    padding: 0 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    border:none;
+    box-shadow: inset 8px 3px 18px -4px rgba(0,0,0,0.4);
+
+}
+
+
+/* banner */
+#banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+    background-blend-mode: overlay;
+    color: white;
+}
+#banner h3{
+    background: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+#searchbox{
+    position: fixed;
+    right: 0;
+    width: 500px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+    top: 24px;
+
+}
+#searchbox input{
+    height: 48px;
+    width: 100%;
+}
+nav{
+    height: 72px;
+    background: #202125;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    
+}
+nav a{
+    padding: 0 32px;
+    color: #ccc;
+    transition: 0.4s;
+}
+nav a:hover{
+    text-decoration: none;
+    color: red;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-around ;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+}
+/* Style the tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+form .input{
+    display: flex;
+    flex-direction: column;
+}
+.btn-submit{
+    padding-left: 57px;
+    width: 47px;
+    margin-left: 23px;
+    text-decoration: underline;
+}
+.btn-submit:hover{
+    background-color: red;
+    width: 50px;
+}
+.active{
+    color: #f783ae;
+}
+#log-img{
+    display: flex;
+    height: 100%;
+    background: #111;
+    padding: 0 16px;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+
+}
+#logo-img img{
+    height: 100%;    
+}
+#logo-img:hover{
+    background: black;
+}
+#menu-icon{
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: #eee;
+    display: none;
+    align-items: none;
+
+}
+/* search */
+#search-icon{
+    color: white;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+#search-icon a img:hover{
+    color: red;
+    background: red;
+    border-radius: 5px;
+}
+/* slideout-menu */
+#slideout-menu{
+    display: none;
+    background: #2d3436;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+#slideout-menu ul{
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slideout-menu ul li{
+    padding: 8px;
+}
+
+#slideout-menu a{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#slideout-menu input{
+    width: 85%;
+    padding: 8px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* section */
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-heading{
+    font-size: 32px;
+    font-family: 'Roboto Condensed',sans-serif;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    padding: 4px 32px;
+
+}
+.section-heading:hover{
+    padding: 4px 48px;
+    background: red;
+}
+#section-source p{
+    padding: 8px;
+    text-align: center; 
+}
+#section-source a{
+    margin: 8px;
+    text-align: center;
+}
+/* card */
+.card-image{
+    transition: 0.4s;
+}
+.card-image:hover{
+    box-shadow: 0 10px 6px -6px #777; 
+}
+.card .card-description{
+    padding: 0 8px;
+}
+/* button read more */
+.btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    
+}
+.btn-readmore:hover{
+    background: red;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+    color: white;
+}
+/* footer */
+footer{
+    background: black;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+}
+footer a{
+    color: white;
+}
+footer #left-footer{
+    flex: 1;
+    border-right: 1px solid red;
+    padding-left: 32px;
+
+}
+footer #left-footer ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+footer #right-footer{
+    flex: 2;
+     padding: 8px;
+     text-align: center;
+}
+
+footer #social-media-footer a img{
+    color: white;
+    transition: 0,4s;
+}
+footer #social-media-footer ul li{
+    font-size: 48px;
+    padding: 16px;
+}
+footer #social-media-footer a img:hover{
+    color: red;
+    background: red;
+    border-radius: 5px;
+}
+
+
+footer #social-media-footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+/* media Queries
+
+To make resposive
+
+*/
+
+@media(max-width:900px){
+    nav ul{
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+    }
+    #slideout-menu{
+        display: block;
+    }
+    #searchbox{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    main{
+        width: 95%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .card,
+    .card .card-image img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #left-footer{
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+    }
+    footer #right-footer{
+        background: #eee;
+        color: black;
+    }
+    footer #right-footer a{
+        color: black;
+    }
+    footer #social-media-footer a img{
+        color: black;
+        background: skyblue;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+}
+
+@media(max-width:600px){
+    main{
+        width: 100%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    #banner h3{ 
+        font-size: 28px;
+    }
+    .card{
+        text-align: center;
+    }
+    #logo-img{
+        padding: 0;
+    }
+}
+
+@media(min-width:720px){
+    main{
+        width: 95%;
+    }
+    .card{
+        width: 45%;
+    }
+    .card .card-image img{
+        width: 100%;
+    }
+}
+/* @media(min-width:1200px){
+    main{
+        width: 85px;
+    }
+} */

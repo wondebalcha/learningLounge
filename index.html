@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning lounge</title>
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading">heading one</h1>
+        <h2 class="heading">heading two</h2>
+        <h3 class="heading">heading three</h3>
+        <h4 class="heading">heading four</h4>
+        <h5 class="heading">heading five</h5>
+        <h6 class="heading">heading six</h6>
+    </header>
+    <div id="slideout-menu">
+        <ul>
+            <li>
+
+                <a class="active" href="#">Home</a>
+            </li>
+    
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <div id="search">
+                    
+                    <a href="#"><img src="img/Youtube-32.png" alt=""></a>
+    
+                </div>
+            </li>
+        </ul>
+    </div>
+    <nav>
+        
+        <div id="menu-icon">
+            <!-- <i class="fas fa-bars"></i> -->
+            <a href="#"><img src="img/Facebook-32.png" alt="bars image"></a>
+        </div>
+        <ul>
+            <li>
+                <a class="active" href="#">Home</a>
+            </li>
+    
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <div id="search-icon">
+                    <input type="text" placeholder="Search Here">
+                    <br>
+                    <a href="#"><img src="img/Youtube-32.png" alt=""></a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="searchbox">
+        <input type="text" placeholder="search Here">
+    </div>
+
+    <div id="banner">
+        <h1>&lt;Learning lounge/&gt;</h1>
+        <h3>start form the scratch</h3>
+    </div>
+    <main>
+        <a href="#">
+            <h2 class="section-heading">All Blogs</h2>
+        </a>
+        <section>
+            <div class="card">
+                <div class="card-image"> 
+                    <a href="#">
+                        <img src="img/task1.jpg" alt="card image">
+                    </a>
+                </div>
+                <div class="card-description">
+                    <a href="#">
+                        <h3>The Blogs Title Here</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab est laboriosam cum? Blanditiis beatae delectus temporibus facere distinctio corporis doloribus consectetur sint impedit molestias. Quod beatae quam nesciunt officiis!
+
+                    </p>
+                    <a href="#" class="btn-readmore">Read More</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Tasks</th>
+                            <th>Duration</td>
+                            <th>Resource</th>
+                            <th>operation</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>task1</td>
+                            <td>4 min</td>
+                            <td>git</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>task2</td>
+                            <td>8 min</td>
+                            <td>git</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>task3</td>
+                            <td>12 min</td>
+                            <td>git</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>task4</td>
+                            <td>10 min</td>
+                            <td>git</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button  class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>task5</td>
+                            <td>20 min</td>
+                            <td>git</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <form action="display.php" method="GET">
+                    <div class="input">
+                        <label>Week</label>
+                        <input type="number" name="week" placeholder="inter week">                      
+                    </div><br>
+                    <div class="input">
+                        <label>task</label>
+                        <input type="text" name="task" placeholder="inter which task is it">
+                    </div><br>
+                    <div class="input">
+                        <label>duration</label>
+                        <input type="datetime" name="duration" placeholder="enter duration of task">
+                    </div><br>
+                    <div class="input">
+                        <label>resource</label>
+                        <input type="text" name="resource" placeholder="inter which resource  you are used">
+                    </div><br>
+
+                    <div class="btn-submit">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+
+                </form>
+                <div class="card-description">
+                    <a href="#">
+                        <h3>The Blogs Title Here</h3>
+                    </a> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda fugiat asperiores odit iure exercitationem fugit obcaecati, sed nemo, dolor, nostrum ipsam doloribus porro quos magnam reiciendis voluptates culpa debitis.
+
+                    </p>
+                    <a href="#" class="btn-readmore">Read More</a>
+                </div>
+               
+
+            </div>
+        </section>
+
+        <a href="#">
+            <h2 class="section-heading">All Projects</h2>
+        </a>
+        
+
+        <section>
+            <div class="card">
+                <div class="card-image"> 
+                    <a href="#">
+                        <img src="img/task1.jpg" alt="card image">
+                    </a>
+                </div>
+                <div class="card-description">
+                    <a href="#">
+                        <h3>The Projects Title Here</h3>
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure suscipit incidunt. Tempore repellendus doloribus, dolor eveniet quaerat non, al
+
+                    </p>
+                    <a href="#" class="btn-readmore">Read More</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image"> 
+                    <a href="#">
+                        <img src="img/task1.jpg" alt="card image">
+                    </a>
+                </div>
+                <div class="card-description">
+                    <a href="#">
+                        <h3>The Projects Title Here</h3>
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure suscipit incidunt. Tempore repellendus doloribus, dolor eveniet quaerat non, al
+
+                    </p>
+                    <a href="#" class="btn-readmore">Read More</a>
+                </div>
+
+            </div>
+        </section>
+        <a href="#">
+            <h2 class="section-heading">Source Code</h2>
+        </a>s
+        
+        <section>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis animi nobis esse soluta facilis corporis? Labore perferendis dolorum autem magni accusantium iste eaque hic eum dolor illum! Amet, voluptatibus molestiae!
+                
+            </p>
+            <a class="btn-readmore" href="https://github.com/wondebalcha">Github Profile</a>
+        </section>
+        <footer>
+            <div id="left-footer">
+                <h3>Quick links</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div id="right-footer">
+                <h3>Follow us on</h3>
+                <div id="social-media-footer">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/Youtube-32.png" alt="Youtube"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Facebook-32.png" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Facebook-32.png" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                <p>this Website is developed by ABbetasab</p>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
