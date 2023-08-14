@@ -3,7 +3,11 @@ body{
     margin: 0;
 }
 .header{
-    display: none;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    /* background: red; */
+    font-size: 25px;
 }
 .heading{
     margin-left: 45px;
@@ -25,6 +29,9 @@ a{
     text-decoration: none;
     color: black;
 
+}
+label{
+    margin:20px 0px 10px 50px;
 }
 a:hover{
     text-decoration: underline;
@@ -66,6 +73,10 @@ input{
     transition: 0.4s;
     top: 24px;
 
+}
+.form{
+    width: 100%;
+    /* display: flex; */
 }
 #searchbox input{
     height: 48px;

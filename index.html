@@ -9,29 +9,25 @@
 
 </head>
 <body>
-    <header class="header">
-        <h1 class="heading">heading one</h1>
-        <h2 class="heading">heading two</h2>
-        <h3 class="heading">heading three</h3>
-        <h4 class="heading">heading four</h4>
-        <h5 class="heading">heading five</h5>
-        <h6 class="heading">heading six</h6>
-    </header>
+   
     <div id="slideout-menu">
         <ul>
             <li>
 
-                <a class="active" href="#">Home</a>
+                <a class="active" href="#banner">Home</a>
             </li>
     
             <li>
-                <a href="#">Blog</a>
+                <a href="#blogs">Blog</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#source">Profile</a>
             </li>
             <li>
                 <div id="search">
@@ -50,17 +46,20 @@
         </div>
         <ul>
             <li>
-                <a class="active" href="#">Home</a>
+                <a class="active" href="#banner">Home</a>
             </li>
     
             <li>
-                <a href="#">Blog</a>
+                <a href="#blogs">Blog</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#source">Profile</a>
             </li>
             <li>
                 <div id="search-icon">
@@ -79,9 +78,13 @@
         <h3>start form the scratch</h3>
     </div>
     <main>
+        <header class="header">
+            <h2>LL Summer Student Iformation Website</h2>
+        </header>
         <a href="#">
-            <h2 class="section-heading">All Blogs</h2>
+            <h2 id="blogs" class="section-heading">All Blogs</h2>
         </a>
+
         <section>
             <div class="card">
                 <div class="card-image"> 
@@ -98,114 +101,13 @@
                     </p>
                     <a href="#" class="btn-readmore">Read More</a>
                 </div>
-
-            </div>
-            <div class="card">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Week</th>
-                            <th>Tasks</th>
-                            <th>Duration</td>
-                            <th>Resource</th>
-                            <th>operation</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>task1</td>
-                            <td>4 min</td>
-                            <td>git</td>
-                            <td>
-                                <button class="update">update</button>
-                                <button class="delete">delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>task2</td>
-                            <td>8 min</td>
-                            <td>git</td>
-                            <td>
-                                <button class="update">update</button>
-                                <button class="delete">delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>task3</td>
-                            <td>12 min</td>
-                            <td>git</td>
-                            <td>
-                                <button class="update">update</button>
-                                <button class="delete">delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>task4</td>
-                            <td>10 min</td>
-                            <td>git</td>
-                            <td>
-                                <button class="update">update</button>
-                                <button  class="delete">delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>task5</td>
-                            <td>20 min</td>
-                            <td>git</td>
-                            <td>
-                                <button class="update">update</button>
-                                <button class="delete">delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-                <br>
-                <form action="display.php" method="GET">
-                    <div class="input">
-                        <label>Week</label>
-                        <input type="number" name="week" placeholder="inter week">                      
-                    </div><br>
-                    <div class="input">
-                        <label>task</label>
-                        <input type="text" name="task" placeholder="inter which task is it">
-                    </div><br>
-                    <div class="input">
-                        <label>duration</label>
-                        <input type="datetime" name="duration" placeholder="enter duration of task">
-                    </div><br>
-                    <div class="input">
-                        <label>resource</label>
-                        <input type="text" name="resource" placeholder="inter which resource  you are used">
-                    </div><br>
-
-                    <div class="btn-submit">
-                        <input type="submit" name="submit" value="Submit">
-                    </div>
-
-                </form>
-                <div class="card-description">
-                    <a href="#">
-                        <h3>The Blogs Title Here</h3>
-                    </a> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda fugiat asperiores odit iure exercitationem fugit obcaecati, sed nemo, dolor, nostrum ipsam doloribus porro quos magnam reiciendis voluptates culpa debitis.
-
-                    </p>
-                    <a href="#" class="btn-readmore">Read More</a>
-                </div>
-               
-
-            </div>
         </section>
-
+       <br><br>
+       
+        
+       
         <a href="#">
-            <h2 class="section-heading">All Projects</h2>
+            <h2 id="projects" class="section-heading">All Projects</h2>
         </a>
         
 
@@ -245,9 +147,117 @@
 
             </div>
         </section>
+
         <a href="#">
-            <h2 class="section-heading">Source Code</h2>
-        </a>s
+            <h2 id="about" class="section-heading">About</h2>
+        </a>
+        
+        <section>
+            <div class="card">
+                <h2>Create LL Summer Student Data</h2>
+                <form action="display.php" method="GET">
+                    <div class="input">
+                        <label>Student ID</label>
+                        <input type="number" name="week" placeholder="student id" required>                      
+                    </div><br>
+                    <div class="input">
+                        <label>first name</label>
+                        <input type="text" name="task" placeholder="first name" required>
+                    </div><br>
+                    <div class="input">
+                        <label>last name</label>
+                        <input type="text" name="task" placeholder="last name" required>
+                    </div><br>
+                    <div class="input">
+                        <label>Sex</label>
+                        <select name="" id="">
+                            <option value="Select Gender Here">male</option>
+                            <option value="Select Gender Here">female</option>
+                            <option value="Select Gender Here">other</option>
+                        </select>
+                    </div><br>
+                    <div class="input">
+                        <label>Role</label>
+                        <input type="text" name="Role" placeholder="developer role">
+                    </div><br>
+    
+                    <div class="btn-submit">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+    
+                </form>
+           </div>
+           <br><br>
+           
+           <div class="card">
+            <h2>View LL Summer Student Data</h2>
+            <div class="">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>StID</th>
+                            <th>Fname</th>
+                            <th>Lname</td>
+                            <th>Sex</th>
+                            <th>Role</th>
+                            <th>operation</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Fekeda</td>
+                            <td>Alemayo</td>
+                            <td>male</td>
+                            <td>Team manager</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Firmaye</td>
+                            <td>Dadi</td>
+                            <td>female</td>
+                            <td>Team leader</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Solome</td>
+                            <td>Yimane</td>
+                            <td>female</td>
+                            <td>Team leader</td>
+                            <td>
+                                <button class="update">update</button>
+                                <button class="delete">delete</button>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                
+            </div>
+            <h3>See Web Developer Data From This Page</h3>
+            <p>Every practice should be built with two primary goals: first 
+                is need to work all devices.Secondly, it needs to be fast as
+                possible 
+            </p>
+            <br><br>
+
+        </section>
+       
+        
+        
+
+        <a href="#">
+            <h2 id="source" class="section-heading">Source Code</h2>
+        </a>
         
         <section>
             <p>
@@ -262,22 +272,19 @@
                 <p>
                     <ul>
                         <li>
-                            <a href="#">home</a>
+                            <a href="#home">home</a>
                         </li>
                         <li>
-                            <a href="#">Blogs</a>
+                            <a href="#blogs">Blogs</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy policy</a>
+                            <a href="#source">Profile</a>
                         </li>
                     </ul>
                 </p>
